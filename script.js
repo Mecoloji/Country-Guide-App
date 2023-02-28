@@ -95,3 +95,10 @@ searchBtn.addEventListener("click", () => {
       }
     });
 });
+
+countryInp.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("search-btn").click();
+  }
+});
